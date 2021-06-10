@@ -15,6 +15,8 @@ class Body {
       
       if(this.tick > this.tickRate) {
          force = p5.Vector.sub(body.pos, this.pos);
+         let head = force.heading();
+         console.log(degrees(head));
          let d = force.mag();
          d = constrain(d, 8, 25);
          strength = G / (d * d);
