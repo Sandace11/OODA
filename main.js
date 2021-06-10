@@ -9,8 +9,8 @@ function setup() {
 
 function draw() {
     background(100);
-    b.update();
-    b.display();
+    b1.update();
+    b1.display();
   
 }
 
@@ -18,5 +18,5 @@ function draw() {
 
 function mousePressed() {
     wind = new p5.Vector(0.1,0);
-    b.applyForce(wind);
+    b1.applyForce(wind);
 }  
