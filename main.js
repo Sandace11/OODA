@@ -3,9 +3,9 @@ let  force, G, strength;
 
 function setup() {
    createCanvas(800, 600);
-   G = 20;
+   G = 10;
 
-   b1 = new Body(100, 100, 20);
+   b1 = new Body(100, 100, 5);
    b2 = new Body(200, 300, 10);
 }
 
@@ -19,6 +19,6 @@ function draw() {
    pop();
    b1.update(b2);
    // b2.update(b1);
-   b1.display();
-   b2.display();
+   b1.display(b2);
+   b2.display(b1);
 }
