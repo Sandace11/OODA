@@ -33,7 +33,7 @@ class Body {
    display() {
       stroke(0);
       fill(175);
-      ellipse(this.pos.x, this.pos.y, 8, 8);
+      ellipse(this.pos.x, this.pos.y, 16, 16);
       line(this.pos.x, this.pos.y, this.pos.x + this.vel.x * 100, this.pos.y + this.vel.y * 100);
 
    }
