@@ -49,10 +49,15 @@ class Body {
    display(body) {
       stroke(0);
       fill(175);
-      // ellipse(this.pos.x, this.pos.y, 16, 16);
-      triangle(this.pos.x - 8,this.pos.y -4, this.pos.x  + 8, this.pos.y -4, this.pos.x , this.pos.y + 12);
+
+      push()
+      translate(this.pos);
+      rotate(this.vel.heading()-radians(90));
+      triangle(-8,-4, 8,-4,0,12);
+      pop()
       line(this.pos.x, this.pos.y, this.pos.x + this.vel.x * 100, this.pos.y + this.vel.y * 100);
       // line(this.pos.x, this.pos.y, body.pos.x, body.pos.y)
+      // alert('1')
 
    }
 }

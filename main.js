@@ -5,8 +5,8 @@ function setup() {
    createCanvas(800, 600);
    G = 10;
 
-   b1 = new Body(400, 100, 0.7, 0.4, 1);
-   b2 = new Body(200, 400, -0.5, 0.7, 1);
+   b1 = new Body(400, 100, 0.7, 0.4, 8);
+   b2 = new Body(200, 400, -0.5, 0.7, 4);
 }
 
 function draw() {
