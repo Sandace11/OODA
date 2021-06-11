@@ -5,8 +5,8 @@ function setup() {
    createCanvas(800, 600);
    G = 10;
 
-   b1 = new Body(100, 100, 5);
-   b2 = new Body(200, 300, 10);
+   b1 = new Body(400, 100, 0.7, 0.4, 1);
+   b2 = new Body(200, 400, -0.5, 0.7, 1);
 }
 
 function draw() {
@@ -18,7 +18,7 @@ function draw() {
    text(b2.vel.x.toFixed(2) + "  " + b2.vel.y.toFixed(2) + "  " + b2.tick, 400, 80);
    pop();
    b1.update(b2);
-   // b2.update(b1);
+   b2.update(b1);
    b1.display(b2);
    b2.display(b1);
 }
