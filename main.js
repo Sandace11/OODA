@@ -3,10 +3,13 @@ let  force, G, strength;
 
 function setup() {
    createCanvas(800, 600);
+   // ORG
    G = 10;
+   const randomPosn1 = [Math.random() * width, Math.random() * height];
+   const randomPosn2 = [Math.random() * width, Math.random() * height];
+   b1 = new Body(randomPosn1[0], randomPosn1[1], 0.2, 0.1, 1);
+   b2 = new Body(randomPosn2[0], randomPosn2[1], -0.5, 0.7, 1);
 
-   b1 = new Body(400, 100, 0.7, 0.4, 8);
-   b2 = new Body(200, 400, -0.5, 0.7, 4);
 }
 
 function draw() {
